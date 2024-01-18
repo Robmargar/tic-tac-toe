@@ -14,7 +14,7 @@ export const Tablero = ({tablero, updateBoard, reiniciar}) => {
         })
         }
     </div>
-    <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 w-full mt-10" onClick={reiniciar}>Reiniciar Juego</button> 
+    <button class="bg-violet-500 hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 w-full my-8" onClick={reiniciar}>Reiniciar Juego</button> 
   </section>
   )
 }

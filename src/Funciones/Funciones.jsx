@@ -15,12 +15,12 @@ export  const revisarGanador=(tableroARevisar)=>{
     if(
       tableroARevisar[a]&&
       tableroARevisar[a]===tableroARevisar[b]&&
-      tableroARevisar[a]===tableroARevisar[c]
+      tableroARevisar[a]===tableroARevisar[c]      
       ){
-        return tableroARevisar[a];
+       return tableroARevisar[a];
       }
   }
-  return null;
+  return false;
 };
 
 export const finDeJuego=(newTablero)=>{

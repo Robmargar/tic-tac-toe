@@ -1,7 +1,3 @@
-
-
-
-
 export const Casilla = ({children, updateBoard, index}) => {
 
   const handleClick=()=>{
