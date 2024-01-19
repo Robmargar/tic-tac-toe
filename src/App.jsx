@@ -3,6 +3,7 @@ import { Aviso} from './Components/Aviso';
 import { Tablero } from './Components/Tablero';
 import { Turno } from './Components/Turno';
 import { Marcador } from './Components/Marcador';
+import { Footer } from './Components/Footer';
 import {revisarGanador, finDeJuego} from './Funciones/Funciones';
 import './App.css'
 
@@ -59,14 +60,15 @@ function App() {
   };
 
   return (
-    <main >
-      <h1 class='text text-6xl mb-8'>Tic Tac Toe</h1>
-      <div class='grid grid-cols-2 border-double border-4 border-slate-800 mb-8 p-1'>
+    <main class="pt-10">
+      <h1 class='text-blanco text-6xl mb-8'>Tic Tac Toe</h1>
+      <div class='grid grid-cols-2 border-double border-4 border-verde shadow-lg  mb-8 p-1'>
         <Turno turn={turn} turns={turns}/>
         <Marcador X={marcador.X} O={marcador.O} E={marcador.E}/>
       </div>
       <Tablero tablero={tablero} updateBoard={updateBoard} reiniciar={reiniciar}/>  
       <Aviso ganador={ganador} reiniciar={reiniciar}/>
+      <Footer class='mb-8'/>
     </main>
   )
 }
