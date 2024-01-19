@@ -60,9 +60,9 @@ function App() {
   };
 
   return (
-    <main class="pt-10">
+    <main class=" grid justify-items-center  border-double border-4 border-verde -4">
       <h1 class='text-blanco text-6xl mb-8'>Tic Tac Toe</h1>
-      <div class='grid grid-cols-2 border-double border-4 border-verde shadow-lg  mb-8 p-1'>
+      <div class='grid grid-cols-2 border-double border-4 border-verde shadow-lg mb-8 p-1 w-96'>
         <Turno turn={turn} turns={turns}/>
         <Marcador X={marcador.X} O={marcador.O} E={marcador.E}/>
       </div>

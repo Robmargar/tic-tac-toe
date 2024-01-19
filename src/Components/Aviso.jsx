@@ -13,7 +13,7 @@ export const Aviso = ({ganador,reiniciar}) => {
             ganador !==false ? <span>{ganador}</span> : <span>🤝</span>
             }
         </header>
-        <footer>
+        <footer >
             <button class="text-xl bg-naranja hover:bg-naranja_claro active:bg-amarillo-700 focus:outline-none focus:ring focus:ring-amarillo rounded-sm shadow-lg w-56 " onClick={reiniciar}>Empezar de nuevo</button>  
         </footer>
        </div>
