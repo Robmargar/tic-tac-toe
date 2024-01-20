@@ -60,13 +60,19 @@ function App() {
   };
 
   return (
-    <main class=" grid justify-items-center  border-double border-4 border-verde -4">
-      <h1 class='text-blanco text-6xl mb-8'>Tic Tac Toe</h1>
-      <div class='grid grid-cols-2 border-double border-4 border-verde shadow-lg mb-8 p-1 w-96'>
-        <Turno turn={turn} turns={turns}/>
-        <Marcador X={marcador.X} O={marcador.O} E={marcador.E}/>
-      </div>
-      <Tablero tablero={tablero} updateBoard={updateBoard} reiniciar={reiniciar}/>  
+    <main class="border-double border-4 border-verde sm:p-2 xlg:p-4">
+      <section class='grid md:grid-flow-col md:auto-cols-max ml-4'>
+        <div class='self-center'>
+          <h1 class='text-blanco text-6xl mb-8'>Tic Tac Toe</h1>
+          <div class='grid justify-self-center grid-cols-2 border-double border-4 border-verde shadow-lg mb-8 p-1 w-96 max-h-96'>
+            <Turno turn={turn} turns={turns}/>
+            <Marcador X={marcador.X} O={marcador.O} E={marcador.E}/>
+          </div>
+        </div>
+        <div class='mt-4'>
+          <Tablero  tablero={tablero} updateBoard={updateBoard} reiniciar={reiniciar}/>    
+        </div>
+      </section>
       <Aviso ganador={ganador} reiniciar={reiniciar}/>
       <Footer class='mb-8'/>
     </main>

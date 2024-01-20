@@ -1,12 +1,12 @@
 
 export const Turno = ({turn,turns}) => {
   return (
-    <section class="bg-gris_claro p-2 ">
-    <div class="flex flex-col  justify-evenly items-center text-2xl ">
-      <p class='underline mb-1'> Turno</p>
-      <span  class={`square ${turn===turns.x ? 'animate-pulse bg-slate-400 w-10  rounded':''}`} >{turns.x}</span>
-      <span  class={`square ${turn===turns.o ? 'animate-pulse bg-slate-400 w-10 rounded':''}`} >{turns.o}</span>
-      <span  class={`square ${turn===turns.e ? 'bg-slate-400 w-10 rounded':''}`} >{turns.e}</span>
+    <section class="text-2xl bg-gris_claro p-2 ">
+    <p class='underline mb-1 min-w-sm'> Turno</p>
+    <div class='grid'>
+      <p class={`square ${turn===turns.x ? 'justify-self-center  animate-pulse bg-slate-400 w-10 rounded ':''}`} >{turns.x}</p>
+      <p class={`square ${turn===turns.o ? 'justify-self-center  animate-pulse bg-slate-400 w-10 rounded':''}`} >{turns.o}</p>
+      <p class={`square ${turn===turns.e ? 'bg-slate-400 w-10 rounded':''}`} >{turns.e}</p>
     </div>    
   </section>
   )

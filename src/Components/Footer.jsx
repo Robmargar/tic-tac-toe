@@ -6,7 +6,7 @@ export const Footer = () => {
      <hr class="h-px my-8 bg-amarillo border-0"/>
       <ul class='flex space-x-5 justify-center m-4'>
         <li>
-          <a href="https://github.com/Robmargar" target="_blank" rel='noreferrer'>
+          <a href="https://github.com/Robmargar/tic-tac-toe" target="_blank" rel='noreferrer'>
             <img class='w-10 ' src="../public/github-am.svg" alt="GitHub" />
           </a>
         </li>
