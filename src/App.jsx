@@ -61,7 +61,7 @@ function App() {
 
   return (
     <main class="border-double border-4 border-verde sm:p-2 xlg:p-4">
-      <section class='grid md:grid-flow-col md:auto-cols-max ml-4'>
+      <section class='grid md:grid-flow-col md:auto-cols-max mx-4'>
         <div class='self-center'>
           <h1 class='text-blanco text-6xl mb-8'>Tic Tac Toe</h1>
           <div class='grid justify-self-center grid-cols-2 border-double border-4 border-verde shadow-lg mb-8 p-1 w-96 max-h-96'>
